@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #111;
+  /* background-color: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+main {
+  background: #8bc3c3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  text-align: center;
+  border: 2px bold #8bc3c3;
+}
+h1 {
+  font-size: 24px;
+}
+
+.task-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+input[type="text"] {
+  width: 40%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background-color: #b0c4de;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+}
+#btn-del {
+  background-color: transparent;
+}
+article {
+  display: flex;
+  justify-content: space-between;
+}
+.task-list {
+  width: 45%;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+.task-list h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  color: #766c65;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px dotted #ccc;
+}
+.edit,
+.delete {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.bold {
+  /* font-weight: 700; */
+  font-weight: bold;
+}

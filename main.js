@@ -73,8 +73,8 @@ const addOrEditTaskFn = () => {
     return;
   }
 
-  if (taskText.length > 10) {
-    alert("😮 Task cannot be more than 10 characters");
+  if (taskText.length > 40) {
+    alert("😮 Task cannot be more than 40 characters");
     return;
   }
 

@@ -21,14 +21,14 @@ Database: Web Storage API – For persistent local data storage (no server requi
 ## Features
 
 📥 GET (Read) Features
-Users can fetch and view all existing todo tasks from localStorage.
+Users can fetch and view all existing to-do tasks from localStorage.
 
 If no tasks are found, an empty list view is displayed.
 
 If something goes wrong while fetching, an error component with a toast message is shown.
 
 ➕ POST (Create) Features
-Users can enter a new todo task via an input form.
+Users can enter a new to-do task via an input form.
 
 Validation:
 
@@ -47,15 +47,15 @@ The task is stored in localStorage.
 A success toast is displayed.
 
 ✏️ PUT (Update) Features
-Users can edit existing todo tasks inline or through an edit form.
+Users can edit existing to-do tasks inline or through an edit form.
 
 Validation:
 
-Task name must be unique and not already exist.
+The task name must be unique and not already exist.
 
 Input must not be empty.
 
-Max length is 50 characters, else an info toast is shown.
+The max length is 40 characters; otherwise, an info toast is shown.
 
 After a successful update:
 
@@ -64,10 +64,7 @@ A success toast is displayed.
 The updated task is visually highlighted for a short time.
 
 🗑️ DELETE (Remove) Features
-Users can delete any todo task.
+Users can delete any to-do task.
 
-After successful deletion:
 
-The task is removed from localStorage.
 
-A success toast message is shown.

@@ -1,70 +1,61 @@
+# To-Do-App
 
-# Project Title
+[To Do App](photo/image-1.png)
 
 To-Do-List-App
 
-I developed a Todo App using Vanilla JavaScript, CSS3, and DOM manipulation, with data persistence handled via the Web Storage API (localStorage).  Although there is no backend, the app mimics a full REST-like experience with complete CRUD functionality, custom validation, and real-time feedback via toast notifications.
-
+I developed a Todo App using Vanilla JavaScript (ES6), HTML5, CSS3, and DOM manipulation, with data persistence handled via the Web Storage API (localStorage). Although there is no backend, the app mimics a full REST-like experience with complete CRUD functionality, custom validation, and real-time feedback via alert notifications.
 
 ## 🔧 Tech Used:
-Client:
 
-JavaScript (ES6+) – For logic, event handling, and direct DOM manipulation.
+JavaScript (ES6+) – For logic, event handling, and DOM manipulation.
 
 HTML5 & CSS3 – For responsive and clean UI design.
 
-Server:
-
-Database: Web Storage API – For persistent local data storage (no server required).
-
+Web Storage API – For persistent local data storage (no server required).
 
 ## Features
 
 📥 GET (Read) Features
-Users can fetch and view all existing to-do tasks from localStorage.
-
+Users can fetch and view all existing todo tasks from `localStorage`.
+[ All existing todo tasks from `localStorage`](photo/image-2.png)
 If no tasks are found, an empty list view is displayed.
-
-If something goes wrong while fetching, an error component with a toast message is shown.
+[If no tasks are found, an empty list view](photo/image-3.png)
 
 ➕ POST (Create) Features
-Users can enter a new to-do task via an input form.
+Users can enter a new todo task via an input form. //pic
 
 Validation:
 
 Input must not be empty.
+[Input must not be empty](photo/image-4.png)
 
-Task length must be ≤ 40 characters, else an info toast is shown.
-
-Users cannot add more than 5 tasks.
-
-Users can clear input before submitting.
+Task length must be `≤ 40` characters, else an info alert is shown.
+[Input must not be over 40+ charcters](photo/image-5.png)
 
 On successful submission:
 
-The task is stored in localStorage.
+The task is stored in localStorage and shown in the pending task. //pic
 
-A success toast is displayed.
+After clicking the checkbox, a pending task should be transferred to a completed task. //before clicking pic after clicking pic
 
 ✏️ PUT (Update) Features
-Users can edit existing to-do tasks inline or through an edit form.
+Users can edit existing pending tasks by clicking edit (✏️) icon and through an edit input field. //pic
 
 Validation:
 
-The task name must be unique and not already exist.
+Input must not be empty. //pic
 
-Input must not be empty.
-
-The max length is 40 characters; otherwise, an info toast is shown.
+Task length must be `≤ 40` characters, else an info alert is shown.
 
 After a successful update:
 
-A success toast is displayed.
-
-The updated task is visually highlighted for a short time.
+The updated task is visually highlighted with bold text.
 
 🗑️ DELETE (Remove) Features
-Users can delete any to-do task.
+Users can delete any todo task from the completed task by clicking delete (🗑️) icon.
+[before remove task from prnding and completed task](photo/image-7.png)
 
-
-
+After successful deletion:
+[after remove task from prnding and completed task](photo/image-8.png)
+The task is removed from localStorage as well.

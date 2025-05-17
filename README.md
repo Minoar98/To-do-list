@@ -2,7 +2,7 @@
 
 ![To Do App](photo/image-1.png)
 
-I developed a Todo App using Vanilla JavaScript (ES6), HTML5, CSS3, and DOM manipulation, with data persistence handled via the Web Storage API (localStorage). Although there is no backend, the app mimics a full REST-like experience with complete CRUD functionality, custom validation, and real-time feedback via alert notifications.
+I developed a [To Do App](https://vanila-js-to-do-application.netlify.app/) using Vanilla JavaScript (ES6), HTML5, CSS3, and DOM manipulation, with data persistence handled via the Web Storage API (localStorage). Although there is no backend, the app mimics a full REST-like experience with complete CRUD functionality, custom validation, and real-time feedback via alert notifications.
 
 ## 🔧 Tech Used:
 
